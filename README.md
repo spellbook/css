@@ -1,2 +1,4 @@
-# css
-Stylish styles stylin’ on you
+Spellbook CSS
+=============
+
+Conventions and structure for web application style sheets.
