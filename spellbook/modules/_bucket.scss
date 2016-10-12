@@ -1,0 +1,53 @@
+// *************************************
+//
+//  Bucket
+//   -> Media-supported content
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .sb-bucket[flag]
+//
+//   .sb-bucket-media
+//     / ...
+//
+//   .sb-bucket-content
+//     / ...
+//
+// *************************************
+
+.sb-bucket {
+  display: flex;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Flag ----- //
+
+.sb-bucket--flag {
+  align-items: center;
+}
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.sb-bucket-content {
+  flex-grow: 1;
+}
+
+// ----- Media ----- //
+
+.sb-bucket-media {
+  flex-shrink: 0;
+  margin-right: $b-space;
+
+  > img {
+    display: block;
+  }
+}
