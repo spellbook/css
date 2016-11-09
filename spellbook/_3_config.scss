@@ -31,14 +31,6 @@ $plum-t1: tint($plum, 40%);
 
 $white: #fff;
 
-// ----- Components ----- //
-
-// ...
-
-// ----- Structures ----- //
-
-// ...
-
 // -------------------------------------
 //   Base
 // -------------------------------------
@@ -90,27 +82,3 @@ $t-heading-fontSize-h1: 32px;
 $t-heading-fontSize-h2: 24px;
 $t-heading-fontSize-h3: 20px;
 $t-heading-fontSize-h4: 18px;
-
-// -------------------------------------
-//   Components
-// -------------------------------------
-
-// ----- Grid ----- //
-
-// Breakpoints
-
-$g-s: 480px;
-$g-m: 800px;
-$g-l: 1024px;
-
-// Settings
-
-$g-columns: 12;
-$g-defaults: (s: $g-s, m: $g-m, l: $g-l);
-$g-gutter: $b-space;
-
-// -------------------------------------
-//   Structures
-// -------------------------------------
-
-// ...
