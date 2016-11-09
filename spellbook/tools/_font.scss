@@ -9,11 +9,11 @@
 // -------------------------------------
 
 .sb-ff-base {
-  font-family: $fontFamily;
+  font-family: $fontFamily !important;
 }
 
 .sb-ff-heading {
-  font-family: $heading-fontFamily;
+  font-family: $heading-fontFamily !important;
 }
 
 // -------------------------------------
@@ -21,23 +21,23 @@
 // -------------------------------------
 
 .sb-fs-xs {
-  font-size: $fontSize-xs;
+  font-size: $fontSize-xs !important;
 }
 
 .sb-fs-s {
-  font-size: $fontSize-s;
+  font-size: $fontSize-s !important;
 }
 
 .sb-fs-m {
-  font-size: $fontSize-s;
+  font-size: $fontSize-s !important;
 }
 
 .sb-fs-l {
-  font-size: $fontSize-l;
+  font-size: $fontSize-l !important;
 }
 
 .sb-fs-xl {
-  font-size: $fontSize-xl;
+  font-size: $fontSize-xl !important;
 }
 
 // -------------------------------------
@@ -45,7 +45,7 @@
 // -------------------------------------
 
 .sb-fsi {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 // -------------------------------------
@@ -53,9 +53,9 @@
 // -------------------------------------
 
 .sb-fw-4 {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .sb-fw-7 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
