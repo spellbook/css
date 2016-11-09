@@ -8,9 +8,9 @@
 html {
   background-color: $porcelain;
   color: $slate;
-  font-family: $t-fontFamily;
-  font-size: $t-fontSize;
-  line-height: $t-lineHeight;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
 }
 
 body {
@@ -22,12 +22,12 @@ body {
 // -------------------------------------
 
 ul, p {
-  margin-bottom: $b-space;
+  margin-bottom: $space;
   margin-top: 0;
 }
 
 li {
-  margin-bottom: $b-space-05;
+  margin-bottom: $space-05;
   margin-top: 0;
 }
 
@@ -37,27 +37,27 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
-  font-family: $t-heading-fontFamily;
+  font-family: $heading-fontFamily;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: $b-space-025;
+  margin-bottom: $space-025;
   margin-top: 0;
 }
 
 h1, .h1 {
-  font-size: $t-heading-fontSize-h1;
+  font-size: $heading-fontSize-h1;
 }
 
 h2, .h2 {
-  font-size: $t-heading-fontSize-h2;
+  font-size: $heading-fontSize-h2;
 }
 
 h3, .h3 {
-  font-size: $t-heading-fontSize-h3;
+  font-size: $heading-fontSize-h3;
 }
 
 h4, .h4 {
-  font-size: $t-heading-fontSize-h4;
+  font-size: $heading-fontSize-h4;
 }
 
 // -------------------------------------
@@ -67,7 +67,7 @@ h4, .h4 {
 // ----- Links ----- //
 
 a {
-  border-bottom: $b-border;
+  border-bottom: $border;
   color: $plum;
   text-decoration: none;
 

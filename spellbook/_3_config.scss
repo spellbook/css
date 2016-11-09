@@ -31,20 +31,20 @@ $white: #fff;
 
 // ----- Borders & Box Shadow ----- //
 
-$b-borderRadius: 3px;
-$b-borderStyle: solid;
-$b-borderWidth: 2px;
-$b-border: $b-borderWidth $b-borderStyle $plum-t1;
-$b-boxShadow: 0 2px 0 rgba($slate, 0.25);
+$borderRadius: 3px;
+$borderStyle: solid;
+$borderWidth: 2px;
+$border: $borderWidth $borderStyle $plum-t1;
+$boxShadow: 0 2px 0 rgba($slate, 0.25);
 
 // ----- Sizing ----- //
 
-$b-maxWidth: 1024px;
-$b-space: 20px;
-$b-space-025: $b-space * 0.25;
-$b-space-05: $b-space * 0.5;
-$b-space-2: $b-space * 2;
-$b-space-4: $b-space * 4;
+$maxWidth: 1024px;
+$space: 20px;
+$space-025: $space * 0.25;
+$space-05: $space * 0.5;
+$space-2: $space * 2;
+$space-4: $space * 4;
 
 // -------------------------------------
 //   Typography
@@ -52,27 +52,27 @@ $b-space-4: $b-space * 4;
 
 // ----- Family ----- //
 
-$t-fontFamily: sans-serif;
+$fontFamily: sans-serif;
 
 // Headings
 
-$t-heading-fontFamily: sans-serif;
+$heading-fontFamily: sans-serif;
 
 // ----- Line Height ----- //
 
-$t-lineHeight: 1.5;
+$lineHeight: 1.5;
 
 // ----- Size ----- //
 
-$t-fontSize: 16px;
-$t-fontSize-xs: 12px;
-$t-fontSize-s: 14px;
-$t-fontSize-l: 18px;
-$t-fontSize-xl: 24px;
+$fontSize: 16px;
+$fontSize-xs: 12px;
+$fontSize-s: 14px;
+$fontSize-l: 18px;
+$fontSize-xl: 24px;
 
 // Headings
 
-$t-heading-fontSize-h1: 32px;
-$t-heading-fontSize-h2: 24px;
-$t-heading-fontSize-h3: 20px;
-$t-heading-fontSize-h4: 18px;
+$heading-fontSize-h1: 32px;
+$heading-fontSize-h2: 24px;
+$heading-fontSize-h3: 20px;
+$heading-fontSize-h4: 18px;
