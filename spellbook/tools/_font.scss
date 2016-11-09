@@ -1,0 +1,49 @@
+// *************************************
+//
+//   Tools - Font
+//
+// *************************************
+
+// -------------------------------------
+//   Family
+// -------------------------------------
+
+.sb-ff-base {
+  font-family: $fontFamily;
+}
+
+.sb-ff-heading {
+  font-family: $heading-fontFamily;
+}
+
+// -------------------------------------
+//   Size
+// -------------------------------------
+
+.sb-fs-xs {
+  font-size: $fontSize-xs;
+}
+
+.sb-fs-s {
+  font-size: $fontSize-s;
+}
+
+.sb-fs-m {
+  font-size: $fontSize-s;
+}
+
+.sb-fs-l {
+  font-size: $fontSize-l;
+}
+
+.sb-fs-xl {
+  font-size: $fontSize-xl;
+}
+
+// -------------------------------------
+//   Style
+// -------------------------------------
+
+.sb-fsi {
+  font-style: italic;
+}
