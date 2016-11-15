@@ -1,0 +1,120 @@
+// *************************************
+//
+//   Tools - Helpers
+//   -> Tool-specific functions and mixins
+//
+// *************************************
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- Selector Breakpoint ----- //
+// -> Prepares a tool selector breakpoint
+//
+// $breakpoint - The breakpoint value
+
+@function tool-selector-breakpoint($breakpoint) {
+  @return if($breakpoint == 'b', '', '_#{$breakpoint}');
+}
+
+// ----- Selector Sign ----- //
+// -> Prepares a tool selector negative prefix
+//
+// $val - The length value
+
+@function tool-selector-sign($val) {
+  $val: to-string($val);
+  $isNegative: str-slice($val, 1, 1) == '-';
+
+  @return if($isNegative, 'n', '');
+}
+
+// ----- Selector Value ----- //
+// -> Prepares a tool selector value
+//
+// $val - The length value
+
+@function tool-selector-value($val) {
+  $val: to-string($val);
+  $val: str-replace($val, '.');
+  $val: str-replace($val, '-');
+  $val: str-replace($val, '%', 'p');
+
+  @return $val;
+}
+
+// ----- Unitless Value ----- //
+// -> Strips unitless unit suffix
+//
+// $val - The unitless value
+
+@function tool-unitless-value($val) {
+  $val: to-string($val);
+
+  @return str-replace($val, 'u');
+}
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+// ----- Generate Unit Tool ----- //
+// -> Produces a single tool class with styles
+//
+// $property - The unitless value
+// $selector - The unitless value
+// $val - The unitless value
+
+@mixin tool-generate-unit-tool($property, $selector, $val, $breakpoint) {
+  $val-string: to-string($val);
+  $unit: unit($val);
+
+  @if $unit == '%'
+    or $unit == 'em'
+    or $unit == 'rem'
+    or $unit == 'px' {
+    .sb-#{$selector}-#{tool-selector-sign($val)}#{tool-selector-value($val)}#{tool-selector-breakpoint($breakpoint)} {
+      #{$property}: $val !important;
+    }
+  } @else if $unit == 'u' {
+    .sb-#{$selector}-#{tool-selector-sign($val)}#{tool-selector-value($val)}#{tool-selector-breakpoint($breakpoint)} {
+      #{$property}: tool-unitless-value($val) !important;
+    }
+  } @else if $unit == '' {
+    .sb-#{$selector}-#{tool-selector-sign($val)}#{tool-selector-value($val)}#{tool-selector-breakpoint($breakpoint)} {
+      #{$property}: $space * $val !important;
+    }
+  } @else {
+    @error '#{$unit} isn’t an accepted unit.';
+  }
+}
+
+// ----- Generate Unit Tools ----- //
+
+@mixin tool-generate-unit-tools($property, $selector, $map) {
+  @each $breakpoint-list in $map {
+    $breakpoint: nth($breakpoint-list, 1);
+    $vals: nth($breakpoint-list, 2);
+
+    @if $breakpoint == 'b' {
+      @each $val in $vals {
+        @include tool-generate-unit-tool($property, $selector, $val, $breakpoint);
+      }
+    } @else {
+      @if to-lower-case($breakpoint) == $breakpoint {
+        @include respond-to(map-get($breakpoints, $breakpoint)) {
+          @each $val in $vals {
+            @include tool-generate-unit-tool($property, $selector, $val, $breakpoint);
+          }
+        }
+      } @else {
+        @include respond-until(map-get($breakpoints, to-lower-case($breakpoint))) {
+          @each $val in $vals {
+            @include tool-generate-unit-tool($property, $selector, $val, $breakpoint);
+          }
+        }
+      }
+    }
+  }
+}
