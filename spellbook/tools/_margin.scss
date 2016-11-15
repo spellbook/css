@@ -1,0 +1,72 @@
+// *************************************
+//
+//   Tools - Margin
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$tool-margin-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-margin-bottom-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-margin-horzontal-center: false;
+
+$tool-margin-left-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-margin-right-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-margin-top-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+// -------------------------------------
+//   All
+// -------------------------------------
+
+@include tool-generate-unit-tools('margin', 'm', $tool-margin-map);
+
+// -------------------------------------
+//   Bottom
+// -------------------------------------
+
+@include tool-generate-unit-tools('margin-bottom', 'mb', $tool-margin-bottom-map);
+
+// -------------------------------------
+//   Horizontal
+// -------------------------------------
+
+@if $tool-margin-horzontal-center {
+  .sb-mhc {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+// -------------------------------------
+//   Left
+// -------------------------------------
+
+@include tool-generate-unit-tools('margin-left', 'ml', $tool-margin-left-map);
+
+// -------------------------------------
+//   Right
+// -------------------------------------
+
+@include tool-generate-unit-tools('margin-right', 'mr', $tool-margin-right-map);
+
+// -------------------------------------
+//   Top
+// -------------------------------------
+
+@include tool-generate-unit-tools('margin-top', 'mt', $tool-margin-top-map);

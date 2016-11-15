@@ -20,6 +20,20 @@
   @return mix(black, $color, $percentage);
 }
 
+// ----- String Replace ----- //
+// -> Substitute substrings
+//    Via: https://css-tricks.com/snippets/sass/str-replace-function/
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
 // ----- Tint ----- //
 // -> Slightly lighten a color
 //    Via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
@@ -29,6 +43,14 @@
 
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
+}
+
+// ----- To String ----- //
+// -> Convert a value to string type
+//    Via: http://hugogiraudel.com/2014/01/27/casting-types-in-sass/
+
+@function to-string($value) {
+  @return inspect($value);
 }
 
 // -------------------------------------
@@ -45,6 +67,18 @@
 
 @mixin respond-to($val, $query: min-width, $media: screen) {
   @media #{$media} and ($query: $val) {
+    @content;
+  }
+}
+
+// ----- Respond-until ----- //
+// -> Generates a media query
+//
+// $val - the breakpoint size
+// @content - the generated content within the mixin
+
+@mixin respond-until($val) {
+  @media screen and (max-width: #{$val - 1px}) {
     @content;
   }
 }

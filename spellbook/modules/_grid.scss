@@ -21,16 +21,7 @@
 //   Variables
 // -------------------------------------
 
-// Breakpoints
-
-$g-s: 480px;
-$g-m: 800px;
-$g-l: 1024px;
-
-// Settings
-
 $g-columns: 12;
-$g-defaults: (s: $g-s, m: $g-m, l: $g-l);
 $g-gutter: $space;
 
 // -------------------------------------
@@ -84,8 +75,8 @@ $g-gutter: $space;
 
 @include g-device-type;
 
-@if $g-defaults {
-  @each $breakpoint, $width in $g-defaults {
+@if $breakpoints {
+  @each $breakpoint, $width in $breakpoints {
     @media screen and (min-width: $width) {
       @include g-device-type('_#{$breakpoint}');
     }

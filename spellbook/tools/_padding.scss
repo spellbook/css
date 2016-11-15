@@ -1,0 +1,59 @@
+// *************************************
+//
+//   Tools - Padding
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$tool-padding-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-padding-bottom-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-padding-left-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-padding-right-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+$tool-padding-top-map: (
+  b: 0 0.25 0.5 1 2 4
+);
+
+// -------------------------------------
+//   All
+// -------------------------------------
+
+@include tool-generate-unit-tools('padding', 'p', $tool-padding-map);
+
+// -------------------------------------
+//   Bottom
+// -------------------------------------
+
+@include tool-generate-unit-tools('padding-bottom', 'pb', $tool-padding-bottom-map);
+
+// -------------------------------------
+//   Left
+// -------------------------------------
+
+@include tool-generate-unit-tools('padding-left', 'pl', $tool-padding-left-map);
+
+// -------------------------------------
+//   Right
+// -------------------------------------
+
+@include tool-generate-unit-tools('padding-right', 'pr', $tool-padding-right-map);
+
+// -------------------------------------
+//   Top
+// -------------------------------------
+
+@include tool-generate-unit-tools('padding-top', 'pt', $tool-padding-top-map);
