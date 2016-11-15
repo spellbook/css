@@ -71,6 +71,18 @@
   }
 }
 
+// ----- Respond-until ----- //
+// -> Generates a media query
+//
+// $val - the breakpoint size
+// @content - the generated content within the mixin
+
+@mixin respond-until($val) {
+  @media screen and (max-width: #{$val - 1px}) {
+    @content;
+  }
+}
+
 // -------------------------------------
 //   Animations
 // -------------------------------------
