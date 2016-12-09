@@ -23,14 +23,14 @@
 
 // Breakpoints
 
-$g-s: 480px;
-$g-m: 800px;
-$g-l: 1024px;
+$g-s: $bp-s;
+$g-m: $bp-m;
+$g-l: $bp-l;
 
 // Settings
 
 $g-columns: 12;
-$g-defaults: (s: $g-s, m: $g-m, l: $g-l);
+$g-defaults: (s: $bp-s, m: $bp-m, l: $bp-l);
 $g-gutter: $space;
 
 // -------------------------------------

@@ -37,6 +37,12 @@ $borderWidth: 2px;
 $border: $borderWidth $borderStyle $plum-t1;
 $boxShadow: 0 2px 0 rgba($slate, 0.25);
 
+// ----- Breakpoints ----- //
+
+$bp-s: 480px;
+$bp-m: 800px;
+$bp-l: 1024px;
+
 // ----- Sizing ----- //
 
 $maxWidth: 1024px;
