@@ -7,12 +7,12 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .sb-g
+// .sb-grid
 //
-//   .sb-g-b[1of12|...]
+//   .sb-grid-box[1of12|...]
 //     / ...
 //
-//   .sb-g-b[1of12|...]
+//   .sb-grid-box[1of12|...]
 //     / ...
 //
 // *************************************
@@ -23,24 +23,24 @@
 
 // Breakpoints
 
-$g-s: $bp-s;
-$g-m: $bp-m;
-$g-l: $bp-l;
+$grid-s: $bp-s;
+$grid-m: $bp-m;
+$grid-l: $bp-l;
 
 // Settings
 
-$g-columns: 12;
-$g-defaults: (s: $bp-s, m: $bp-m, l: $bp-l);
-$g-gutter: $space;
+$grid-columns: 12;
+$grid-defaults: (s: $bp-s, m: $bp-m, l: $bp-l);
+$grid-gutter: $space;
 
 // -------------------------------------
 //   Base
 // -------------------------------------
 
-.sb-g {
+.sb-grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$g-gutter;
+  margin-left: -$grid-gutter;
 }
 
 // -------------------------------------
@@ -49,7 +49,7 @@ $g-gutter: $space;
 
 // ----- Grid ----- //
 
-.sb-g--center {
+.sb-grid--center {
   justify-content: center;
 }
 
@@ -59,8 +59,8 @@ $g-gutter: $space;
 
 // ----- Box ----- //
 
-.sb-g-b {
-  padding-left: $g-gutter;
+.sb-grid-box {
+  padding-left: $grid-gutter;
   width: 100%;
 }
 
@@ -69,9 +69,9 @@ $g-gutter: $space;
 // -------------------------------------
 
 @mixin g-device-type($namespace: '') {
-  @each $item in $g-columns {
+  @each $item in $grid-columns {
     @for $index from 1 through $item {
-      .sb-g-b--#{$index}of#{$item}#{$namespace} {
+      .sb-grid-box--#{$index}of#{$item}#{$namespace} {
         width: percentage($index / $item);
       }
     }
@@ -84,8 +84,8 @@ $g-gutter: $space;
 
 @include g-device-type;
 
-@if $g-defaults {
-  @each $breakpoint, $width in $g-defaults {
+@if $grid-defaults {
+  @each $breakpoint, $width in $grid-defaults {
     @media screen and (min-width: $width) {
       @include g-device-type('_#{$breakpoint}');
     }
