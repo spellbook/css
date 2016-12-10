@@ -18,39 +18,6 @@ body {
 }
 
 // -------------------------------------
-//   Block Content
-// -------------------------------------
-
-// ----- Headings ----- //
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4 {
-  font-family: $heading-fontFamily;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: $space-025;
-  margin-top: 0;
-}
-
-h1, .h1 {
-  font-size: $heading-fontSize-h1;
-}
-
-h2, .h2 {
-  font-size: $heading-fontSize-h2;
-}
-
-h3, .h3 {
-  font-size: $heading-fontSize-h3;
-}
-
-h4, .h4 {
-  font-size: $heading-fontSize-h4;
-}
-
-// -------------------------------------
 //   Inline Content
 // -------------------------------------
 

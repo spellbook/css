@@ -1,0 +1,90 @@
+// *************************************
+//
+//   Heading
+//   -> Section title
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .sb-heading[1|2|3|4 mb normal]
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Typography ----- //
+
+// Line Height
+
+$heading-lineHeight: 1.2;
+
+// Size
+
+$heading-fontSize-h1: 32px;
+$heading-fontSize-h2: 24px;
+$heading-fontSize-h3: 20px;
+$heading-fontSize-h4: 18px;
+
+// Weight
+
+$heading-fontWeight: 700;
+$heading-fontWeight-normal: 400;
+
+// ----- Spacing ----- //
+
+$heading-marginBottom: $space-05;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.sb-heading {
+  font-family: $fontFamily-heading;
+  font-weight: $heading-fontWeight;
+  line-height: $heading-lineHeight;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Hierarchy ----- //
+
+// Top-level
+
+.sb-heading--1 {
+  font-size: $heading-fontSize-h1;
+}
+
+// Second-level
+
+.sb-heading--2 {
+  font-size: $heading-fontSize-h2;
+}
+
+// Third-level
+
+.sb-heading--3 {
+  font-size: $heading-fontSize-h3;
+}
+
+// Fourth-level
+
+.sb-heading--4 {
+  font-size: $heading-fontSize-h4;
+}
+
+// ----- Margin ----- //
+
+.sb-heading--mb {
+  margin-bottom: $heading-marginBottom;
+}
+
+// ----- Weight ----- //
+
+.sb-heading--normal {
+  font-weight: $heading-fontWeight-normal;
+}
