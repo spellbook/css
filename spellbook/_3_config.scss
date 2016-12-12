@@ -59,10 +59,7 @@ $space-4: $space * 4;
 // ----- Family ----- //
 
 $fontFamily: sans-serif;
-
-// Headings
-
-$heading-fontFamily: sans-serif;
+$fontFamily-heading: sans-serif;
 
 // ----- Line Height ----- //
 
@@ -75,10 +72,3 @@ $fontSize-xs: 12px;
 $fontSize-s: 14px;
 $fontSize-l: 18px;
 $fontSize-xl: 24px;
-
-// Headings
-
-$heading-fontSize-h1: 32px;
-$heading-fontSize-h2: 24px;
-$heading-fontSize-h3: 20px;
-$heading-fontSize-h4: 18px;
