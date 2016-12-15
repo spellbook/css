@@ -6,7 +6,7 @@
 // *************************************
 
 html {
-  background-color: $porcelain;
+  background-color: $white;
   color: $slate;
   font-family: $fontFamily;
   font-size: $fontSize;
@@ -25,13 +25,13 @@ body {
 
 a {
   border-bottom: $border;
-  color: $plum;
+  color: $sun;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    border-bottom-color: $plum;
-    color: $plum-t1;
+    border-bottom-color: $slate;
+    color: $slate;
   }
 }
 

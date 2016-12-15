@@ -13,13 +13,14 @@
 
 // Gray
 
-$porcelain: #ecf0f1;
-$slate: #444;
+$slate: #2f2f2f;
+$slate-t1: tint($slate, 50%);
+$slate-t2: tint($slate, 70%);
+$slate-t3: tint($slate, 90%);
 
-// Purple
+// Yellow
 
-$plum: #4e4e5b;
-$plum-t1: tint($plum, 40%);
+$sun: #f4bc40;
 
 // White
 
@@ -34,7 +35,7 @@ $white: #fff;
 $borderRadius: 3px;
 $borderStyle: solid;
 $borderWidth: 2px;
-$border: $borderWidth $borderStyle $plum-t1;
+$border: $borderWidth $borderStyle $slate-t2;
 $boxShadow: 0 2px 0 rgba($slate, 0.25);
 
 // ----- Breakpoints ----- //
