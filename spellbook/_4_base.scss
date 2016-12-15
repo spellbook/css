@@ -21,20 +21,6 @@ body {
 //   Inline Content
 // -------------------------------------
 
-// ----- Links ----- //
-
-a {
-  border-bottom: $border;
-  color: $sun;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    border-bottom-color: $slate;
-    color: $slate;
-  }
-}
-
 // ----- Images ----- //
 
 img {

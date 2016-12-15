@@ -1,0 +1,76 @@
+// *************************************
+//
+//   Link
+//   -> Actionable text
+//
+// .sb-link[bordered|inverted|subdued]
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Borders ----- //
+
+$link-borderStyle: solid;
+$link-borderWidth: 1px;
+$link-border: $link-borderWidth $link-borderStyle currentColor;
+
+// ----- Colors ----- //
+
+$link-color: $sun;
+$link-color-hover: $slate;
+$link-color-inverted: $white;
+$link-color-inverted-hover: rgba($white, 0.75);
+$link-color-subdued: $slate-t1;
+$link-color-subdued-hover: $slate;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.sb-link {
+  color: $link-color;
+  text-decoration: none;
+
+  @include state {
+    color: $link-color-hover;
+  }
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Bordered ----- //
+
+.sb-link--bordered {
+  border-bottom: $link-border;
+
+  @include state {
+    border-bottom-color: currentColor;
+  }
+}
+
+// ----- Colors ----- //
+
+// Inverted
+
+.sb-link--inverted {
+  color: $link-color-inverted;
+
+  @include state {
+    color: $link-color-inverted-hover;
+  }
+}
+
+// Subdued
+
+.sb-link--subdued {
+  color: $link-color-subdued;
+
+  @include state {
+    color: $link-color-subdued-hover;
+  }
+}
