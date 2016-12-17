@@ -20,6 +20,7 @@ var rename = require('gulp-rename');
 gulp.task('compile', function() {
   gulp.src('application.scss')
     .pipe(scss())
+    .pipe(rename('spellbook.css'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -28,8 +29,8 @@ gulp.task('compile', function() {
 // -------------------------------------
 
 gulp.task('build', function() {
-  gulp.src('dist/application.css')
-    .pipe(rename('application.min.css'))
+  gulp.src('dist/spellbook.css')
+    .pipe(rename('spellbook.min.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest('dist'));
 });
