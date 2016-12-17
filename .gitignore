@@ -1,3 +1,5 @@
 *.css.map
 .DS_Store
 .sass-cache/
+node_modules/
+.gulp-scss-cache/
