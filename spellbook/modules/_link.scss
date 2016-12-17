@@ -1,0 +1,66 @@
+// *************************************
+//
+//   Link
+//   -> Actionable text
+//
+// .sb-link[inverted|subdued|underlined]
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$link-color: $sun;
+$link-color-hover: $slate;
+$link-color-inverted: $white;
+$link-color-inverted-hover: rgba($white, 0.75);
+$link-color-subdued: $slate-t1;
+$link-color-subdued-hover: $slate;
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.sb-link {
+  color: $link-color;
+  text-decoration: none;
+
+  @include state {
+    color: $link-color-hover;
+  }
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Colors ----- //
+
+// Inverted
+
+.sb-link--inverted {
+  color: $link-color-inverted;
+
+  @include state {
+    color: $link-color-inverted-hover;
+  }
+}
+
+// Subdued
+
+.sb-link--subdued {
+  color: $link-color-subdued;
+
+  @include state {
+    color: $link-color-subdued-hover;
+  }
+}
+
+// ----- Underlined ----- //
+
+.sb-link--underlined {
+  text-decoration: underline;
+}
