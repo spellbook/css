@@ -9,6 +9,16 @@
 //   Functions
 // -------------------------------------
 
+// ----- Palette ----- //
+// -> Return palette color variables
+//
+// $key - the color name
+// $value - the color value
+
+@function palette($key, $value: 0) {
+  @return map-get(map-get($palette, $key), $value);
+}
+
 // ----- Shade ----- //
 // -> Slightly darken a color
 //    via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)

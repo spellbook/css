@@ -13,12 +13,12 @@
 
 // ----- Colors ----- //
 
-$link-color: $sun;
-$link-color-hover: $slate;
-$link-color-inverted: $white;
-$link-color-inverted-hover: rgba($white, 0.75);
-$link-color-subdued: $slate-t1;
-$link-color-subdued-hover: $slate;
+$link-color: palette('action');
+$link-color-hover: palette('base');
+$link-color-inverted: palette('light');
+$link-color-inverted-hover: rgba(palette('light'), 0.75);
+$link-color-subdued: palette('base', 't1');
+$link-color-subdued-hover: palette('base');
 
 // -------------------------------------
 //   Base

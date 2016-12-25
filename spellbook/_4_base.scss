@@ -6,8 +6,8 @@
 // *************************************
 
 html {
-  background-color: $white;
-  color: $slate;
+  background-color: palette('light');
+  color: palette('base');
   font-family: $fontFamily;
   font-size: $fontSize;
   line-height: $lineHeight;

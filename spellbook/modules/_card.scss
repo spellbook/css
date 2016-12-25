@@ -13,7 +13,7 @@
 // *************************************
 
 .sb-card {
-  background-color: $white;
+  background-color: palette('light');
   border-radius: $borderRadius;
   box-shadow: $boxShadow;
   padding: $space;
