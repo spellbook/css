@@ -607,22 +607,22 @@ img {
   text-align: center; }
 
 .sb-tc-action {
-  background-color: #f4bc40; }
+  color: #f4bc40; }
 
 .sb-tc-base {
-  background-color: #2f2f2f; }
+  color: #2f2f2f; }
 
 .sb-tc-base-t1 {
-  background-color: #979797; }
+  color: #979797; }
 
 .sb-tc-base-t2 {
-  background-color: #c1c1c1; }
+  color: #c1c1c1; }
 
 .sb-tc-base-t3 {
-  background-color: #eaeaea; }
+  color: #eaeaea; }
 
 .sb-tc-light {
-  background-color: #fff; }
+  color: #fff; }
 
 .sb-tfb {
   font-family: sans-serif; }

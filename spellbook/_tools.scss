@@ -15,16 +15,22 @@
 // $prefix - the tool class prefix
 
 @mixin tool-generate-color-classes($prefix) {
+  $property: 'background-color';
+
+  @if ($prefix == 'tc') {
+    $property: 'color';
+  }
+
   @each $key, $val in $palette {
     @each $k, $v in $val {
       @if ($k == 0) {
         .sb-#{$prefix}-#{$key} {
-          background-color: $v;
+          #{$property}: $v;
         }
       }
       @else {
         .sb-#{$prefix}-#{$key}-#{$k} {
-          background-color: $v;
+          #{$property}: $v;
         }
       }
     }
