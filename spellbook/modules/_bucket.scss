@@ -7,7 +7,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .sb-bucket[flag]
+// .sb-bucket[vc]
 //
 //   .sb-bucket-media
 //     / ...
@@ -25,14 +25,14 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Flag ----- //
+// ----- Vertically Center ----- //
 
-.sb-bucket--flag {
+.sb-bucket--vc {
   align-items: center;
 }
 
 // -------------------------------------
-//   Scaffolding
+//   Submodules
 // -------------------------------------
 
 // ----- Content ----- //
