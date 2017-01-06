@@ -29,7 +29,7 @@
         }
       }
       @else {
-        .sb-#{$prefix}-#{$key}-#{$k} {
+        .sb-#{$prefix}-#{$key}-#{str-replace(to-string($k), '-', 'n')} {
           #{$property}: $v;
         }
       }
