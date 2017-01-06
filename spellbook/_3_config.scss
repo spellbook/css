@@ -21,9 +21,9 @@ $palette: (
   ),
   base: (
     0: $slate,
-    t1: tint($slate, 50%),
-    t2: tint($slate, 70%),
-    t3: tint($slate, 90%)
+    1: tint($slate, 50%),
+    2: tint($slate, 70%),
+    3: tint($slate, 90%)
   ),
   light: (
     0: $white
@@ -39,7 +39,7 @@ $palette: (
 $borderRadius: 3px;
 $borderStyle: solid;
 $borderWidth: 2px;
-$border: $borderWidth $borderStyle palette('base', 't2');
+$border: $borderWidth $borderStyle palette('base', 2);
 $boxShadow: 0 2px 0 rgba(palette('base'), 0.25);
 
 // ----- Breakpoints ----- //
