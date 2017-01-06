@@ -21,9 +21,9 @@ $palette: (
   ),
   base: (
     0: $slate,
-    1: tint($slate, 50%),
-    2: tint($slate, 70%),
-    3: tint($slate, 90%)
+    1: lighter($slate, 50%),
+    2: lighter($slate, 70%),
+    3: lighter($slate, 90%)
   ),
   light: (
     0: $white

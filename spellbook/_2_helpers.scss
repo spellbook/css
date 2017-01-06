@@ -19,25 +19,25 @@
   @return map-get(map-get($palette, $key), $value);
 }
 
-// ----- Shade ----- //
+// ----- Darker ----- //
 // -> Slightly darken a color
 //    via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
 //
-// $color - the color to shade
+// $color - the color to make darker
 // $percentage - the percentage of black to add to `$color`
 
-@function shade($color, $percentage) {
+@function darker($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
 
-// ----- Tint ----- //
+// ----- Lighter ----- //
 // -> Slightly lighten a color
 //    Via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
 //
-// $color - the color to tint
+// $color - the color to make lighter
 // $percentage - the percentage of white to add to `$color`
 
-@function tint($color, $percentage) {
+@function lighter($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
 
