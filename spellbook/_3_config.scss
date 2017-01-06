@@ -11,20 +11,24 @@
 
 // ----- Palette ----- //
 
-// Gray
-
-$slate: #2f2f2f;
-$slate-t1: tint($slate, 50%);
-$slate-t2: tint($slate, 70%);
-$slate-t3: tint($slate, 90%);
-
-// Yellow
-
 $sun: #f4bc40;
-
-// White
-
+$slate: #2f2f2f;
 $white: #fff;
+
+$palette: (
+  action: (
+    0: $sun
+  ),
+  base: (
+    0: $slate,
+    1: lighter($slate, 50%),
+    2: lighter($slate, 70%),
+    3: lighter($slate, 90%)
+  ),
+  light: (
+    0: $white
+  )
+);
 
 // -------------------------------------
 //   Base
@@ -35,8 +39,8 @@ $white: #fff;
 $borderRadius: 3px;
 $borderStyle: solid;
 $borderWidth: 2px;
-$border: $borderWidth $borderStyle $slate-t2;
-$boxShadow: 0 2px 0 rgba($slate, 0.25);
+$border: $borderWidth $borderStyle palette('base', 2);
+$boxShadow: 0 2px 0 rgba(palette('base'), 0.25);
 
 // ----- Breakpoints ----- //
 

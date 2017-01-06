@@ -6,32 +6,42 @@
 // *************************************
 
 // -------------------------------------
+//   Helpers
+// -------------------------------------
+
+// ----- Tool Generate Color Classes ----- //
+// -> Generates color tool classes
+//
+// $prefix - the tool class prefix
+
+@mixin tool-generate-color-classes($prefix) {
+  $property: 'background-color';
+
+  @if ($prefix == 'tc') {
+    $property: 'color';
+  }
+
+  @each $key, $val in $palette {
+    @each $k, $v in $val {
+      @if ($k == 0) {
+        .sb-#{$prefix}-#{$key} {
+          #{$property}: $v;
+        }
+      }
+      @else {
+        .sb-#{$prefix}-#{$key}-#{str-replace(to-string($k), '-', 'n')} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}
+
+// -------------------------------------
 //   Background
 // -------------------------------------
 
-.sb-bc-slate {
-  background-color: $slate;
-}
-
-.sb-bc-slate-t1 {
-  background-color: $slate-t1;
-}
-
-.sb-bc-slate-t2 {
-  background-color: $slate-t2;
-}
-
-.sb-bc-slate-t3 {
-  background-color: $slate-t3;
-}
-
-.sb-bc-sun {
-  background-color: $sun;
-}
-
-.sb-bc-white {
-  background-color: $white;
-}
+@include tool-generate-color-classes('bc');
 
 // -------------------------------------
 //   Display
@@ -392,29 +402,7 @@
 
 // ----- Color ----- //
 
-.sb-tc-slate {
-  color: $slate;
-}
-
-.sb-tc-slate-t1 {
-  color: $slate-t1;
-}
-
-.sb-tc-slate-t2 {
-  color: $slate-t2;
-}
-
-.sb-tc-slate-t3 {
-  color: $slate-t3;
-}
-
-.sb-tc-sun {
-  color: $sun;
-}
-
-.sb-tc-white {
-  color: $white;
-}
+@include tool-generate-color-classes('tc');
 
 // ----- Family ----- //
 
