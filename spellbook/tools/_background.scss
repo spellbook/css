@@ -10,29 +10,7 @@
 
 // ----- Palette ----- //
 
-.sb-bc-action {
-  background-color: palette('action') !important;
-}
-
-.sb-bc-base {
-  background-color: palette('base') !important;
-}
-
-.sb-bc-base-1 {
-  background-color: palette('base', 1) !important;
-}
-
-.sb-bc-base-2 {
-  background-color: palette('base', 2) !important;
-}
-
-.sb-bc-base-3 {
-  background-color: palette('base', 3) !important;
-}
-
-.sb-bc-light {
-  background-color: palette('light') !important;
-}
+@include tool-generate-color-classes('bc');
 
 // ----- Variables ----- //
 
