@@ -14,10 +14,14 @@
 // $prefix - the tool class prefix
 
 @mixin tool-generate-color-classes($prefix) {
-  $property: 'background-color';
+  $property: null;
 
-  @if ($prefix == 'tc') {
+  @if ($prefix == 'bc') {
+    $property: 'background-color';
+  } @else if ($prefix == 'c') {
     $property: 'color';
+  } @else {
+    @error '#{$prefix} is not a valid prefix';
   }
 
   @each $key, $val in $palette {
