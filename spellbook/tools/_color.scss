@@ -8,29 +8,7 @@
 //   Palette
 // -------------------------------------
 
-.sb-c-action {
-  color: palette('action') !important;
-}
-
-.sb-c-base {
-  color: palette('base') !important;
-}
-
-.sb-c-base-1 {
-  color: palette('base', 1) !important;
-}
-
-.sb-c-base-2 {
-  color: palette('base', 2) !important;
-}
-
-.sb-c-base-3 {
-  color: palette('base', 3) !important;
-}
-
-.sb-c-light {
-  color: palette('light') !important;
-}
+@include tool-generate-color-classes('c');
 
 // -------------------------------------
 //   Variables
