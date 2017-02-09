@@ -20,8 +20,6 @@
 
 html {
   box-sizing: border-box;
-  font-feature-settings: 'kern', 'liga';
-  font-kerning: normal;
 }
 
 // -------------------------------------
@@ -43,7 +41,6 @@ ol, ul {
 
 pre {
   font-family: inherit;
-  font-feature-settings: 'kern';
 }
 
 // -------------------------------------
@@ -76,7 +73,6 @@ strong, b {
 
 code, kbd {
   font-family: inherit;
-  font-feature-settings: 'kern';
 }
 
 // -------------------------------------
