@@ -10,22 +10,6 @@
 
 @if $tools-background-color {
 
-  // ----- Palette ----- //
-
   @include tool-generate-color-classes('background-color', 'bc');
-
-  // ----- Variables ----- //
-
-  .sb-bc-slate {
-    background-color: $slate !important;
-  }
-
-  .sb-bc-sun {
-    background-color: $sun !important;
-  }
-
-  .sb-bc-white {
-    background-color: $white !important;
-  }
 
 }

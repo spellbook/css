@@ -367,15 +367,6 @@ img {
 .sb-bc-light {
   background-color: #fff !important; }
 
-.sb-bc-slate {
-  background-color: #2f2f2f !important; }
-
-.sb-bc-sun {
-  background-color: #f4bc40 !important; }
-
-.sb-bc-white {
-  background-color: #fff !important; }
-
 .sb-bd {
   border: 2px solid #c1c1c1 !important; }
 
@@ -410,15 +401,6 @@ img {
   color: #eaeaea !important; }
 
 .sb-tc-light {
-  color: #fff !important; }
-
-.sb-c-slate {
-  color: #2f2f2f !important; }
-
-.sb-c-sun {
-  color: #f4bc40 !important; }
-
-.sb-c-white {
   color: #fff !important; }
 
 .sb-db {
