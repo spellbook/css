@@ -6,6 +6,6 @@
 
 @if $tools-color {
 
-  @include tool-generate-color-classes('color', 'tc');
+  @include tool-generate-color-classes('color', 'c');
 
 }
