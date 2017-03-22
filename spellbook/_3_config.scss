@@ -88,6 +88,9 @@ $tools-background-color: true;
 
 // ----- Border ----- //
 
+$tools-border-all: true;
+$tools-border-bottom: true;
+$tools-border-top: true;
 $tools-border-radius: true;
 
 // ----- Color ----- //
@@ -118,6 +121,10 @@ $tools-margin-left: true;
 $tools-margin-right: true;
 $tools-margin-top: true;
 
+// ----- Opacity ----- //
+
+$tools-opacity: true;
+
 // ----- Padding ----- //
 
 $tools-padding-all: true;
@@ -131,3 +138,7 @@ $tools-position: true;
 
 $tools-text-align: true;
 $tools-text-transform: true;
+
+// ----- Visibility ----- //
+
+$tools-visibility: true;

@@ -1,0 +1,17 @@
+// *************************************
+//
+//   Tools - Visibility
+//
+// *************************************
+
+@if $tools-visibility {
+
+  .sb-vih {
+    visibility: hidden !important;
+  }
+
+  .sb-viv {
+    visibility: visible !important;
+  }
+
+}

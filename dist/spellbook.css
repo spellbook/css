@@ -376,6 +376,15 @@ img {
 .sb-bc-white {
   background-color: #fff !important; }
 
+.sb-bd {
+  border: 2px solid #c1c1c1 !important; }
+
+.sb-bdb {
+  border-bottom: 2px solid #c1c1c1 !important; }
+
+.sb-bdt {
+  border-top: 2px solid #c1c1c1 !important; }
+
 .sb-bdra-0 {
   border-radius: 0 !important; }
 

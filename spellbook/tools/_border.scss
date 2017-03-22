@@ -5,6 +5,40 @@
 // *************************************
 
 // -------------------------------------
+//   Border
+// -------------------------------------
+
+// ----- All ----- //
+
+@if $tools-border-all {
+
+  .sb-bd {
+    border: $border !important;
+  }
+
+}
+
+// ----- Bottom ----- //
+
+@if $tools-border-bottom {
+
+  .sb-bdb {
+    border-bottom: $border !important;
+  }
+
+}
+
+// ----- Top ----- //
+
+@if $tools-border-top {
+
+  .sb-bdt {
+    border-top: $border !important;
+  }
+
+}
+
+// -------------------------------------
 //   Radius
 // -------------------------------------
 
