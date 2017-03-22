@@ -11,29 +11,20 @@
 // ----- Tool Generate Color Classes ----- //
 // -> Generates color tool classes
 //
+// $proptery - the tool class property
 // $prefix - the tool class prefix
 
-@mixin tool-generate-color-classes($prefix) {
-  $property: null;
-
-  @if ($prefix == 'bc') {
-    $property: 'background-color';
-  } @else if ($prefix == 'c') {
-    $property: 'color';
-  } @else {
-    @error '#{$prefix} is not a valid prefix';
-  }
-
+@mixin tool-generate-color-classes($property, $prefix) {
   @each $key, $val in $palette {
     @each $k, $v in $val {
       @if ($k == 0) {
         .sb-#{$prefix}-#{$key} {
-          #{$property}: $v;
+          #{$property}: $v !important;
         }
       }
       @else {
         .sb-#{$prefix}-#{$key}-#{str-replace(to-string($k), '-', 'n')} {
-          #{$property}: $v;
+          #{$property}: $v !important;
         }
       }
     }

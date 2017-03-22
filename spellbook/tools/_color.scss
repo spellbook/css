@@ -8,7 +8,7 @@
 //   Palette
 // -------------------------------------
 
-@include tool-generate-color-classes('c');
+@include tool-generate-color-classes('color', 'tc');
 
 // -------------------------------------
 //   Variables
