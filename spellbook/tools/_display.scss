@@ -4,26 +4,30 @@
 //
 // *************************************
 
-.sb-db {
-  display: block !important;
-}
+@if $tools-display {
 
-.sb-di {
-  display: inline !important;
-}
+  .sb-db {
+    display: block !important;
+  }
 
-.sb-df {
-  display: flex !important;
-}
+  .sb-di {
+    display: inline !important;
+  }
 
-.sb-dib {
-  display: inline-block !important;
-}
+  .sb-df {
+    display: flex !important;
+  }
 
-.sb-dif {
-  display: inline-flex !important;
-}
+  .sb-dib {
+    display: inline-block !important;
+  }
 
-.sb-dn {
-  display: none !important;
+  .sb-dif {
+    display: inline-flex !important;
+  }
+
+  .sb-dn {
+    display: none !important;
+  }
+
 }

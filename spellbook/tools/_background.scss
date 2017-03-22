@@ -8,20 +8,24 @@
 //   Color
 // -------------------------------------
 
-// ----- Palette ----- //
+@if $tools-background-color {
 
-@include tool-generate-color-classes('background-color', 'bc');
+  // ----- Palette ----- //
 
-// ----- Variables ----- //
+  @include tool-generate-color-classes('background-color', 'bc');
 
-.sb-bc-slate {
-  background-color: $slate !important;
-}
+  // ----- Variables ----- //
 
-.sb-bc-sun {
-  background-color: $sun !important;
-}
+  .sb-bc-slate {
+    background-color: $slate !important;
+  }
 
-.sb-bc-white {
-  background-color: $white !important;
+  .sb-bc-sun {
+    background-color: $sun !important;
+  }
+
+  .sb-bc-white {
+    background-color: $white !important;
+  }
+
 }

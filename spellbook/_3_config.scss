@@ -77,3 +77,57 @@ $fontSize-xs: 12px;
 $fontSize-s: 14px;
 $fontSize-l: 18px;
 $fontSize-xl: 24px;
+
+// -------------------------------------
+//   Tools
+// -------------------------------------
+
+// ----- Background ----- //
+
+$tools-background-color: true;
+
+// ----- Border ----- //
+
+$tools-border-radius: true;
+
+// ----- Color ----- //
+
+$tools-color: true;
+
+// ----- Display ----- //
+
+$tools-display: true;
+
+// ----- Float ----- //
+
+$tools-float: true;
+
+// ----- Font ----- //
+
+$tools-font-family: true;
+$tools-font-size: true;
+$tools-font-style: true;
+$tools-font-weight: true;
+
+// ----- Margin ----- //
+
+$tools-margin-all: true;
+$tools-margin-bottom: true;
+$tools-margin-horizontal: true;
+$tools-margin-left: true;
+$tools-margin-right: true;
+$tools-margin-top: true;
+
+// ----- Padding ----- //
+
+$tools-padding-all: true;
+$tools-padding-bottom: true;
+$tools-padding-left: true;
+$tools-padding-right: true;
+$tools-padding-top: true;
+$tools-position: true;
+
+// ----- Text ----- //
+
+$tools-text-align: true;
+$tools-text-transform: true;

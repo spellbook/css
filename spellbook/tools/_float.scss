@@ -4,10 +4,14 @@
 //
 // *************************************
 
-.sb-fl {
-  float: left !important;
-}
+@if $tools-float {
 
-.sb-fr {
-  float: right !important;
+  .sb-fl {
+    float: left !important;
+  }
+
+  .sb-fr {
+    float: right !important;
+  }
+
 }

@@ -4,18 +4,22 @@
 //
 // *************************************
 
-.sb-poa {
-  position: absolute !important;
-}
+@if $tools-position {
 
-.sb-pof {
-  position: fixed !important;
-}
+  .sb-poa {
+    position: absolute !important;
+  }
 
-.sb-por {
-  position: relative !important;
-}
+  .sb-pof {
+    position: fixed !important;
+  }
 
-.sb-pos {
-  position: static !important;
+  .sb-por {
+    position: relative !important;
+  }
+
+  .sb-pos {
+    position: static !important;
+  }
+
 }

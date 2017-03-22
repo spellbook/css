@@ -8,14 +8,22 @@
 //   Align
 // -------------------------------------
 
-.sb-tac {
-  text-align: center !important;
+@if $tools-text-align {
+
+  .sb-tac {
+    text-align: center !important;
+  }
+
 }
 
 // -------------------------------------
 //   Transform
 // -------------------------------------
 
-.sb-ttu {
-  text-transform: uppercase !important;
+@if $tools-text-transform {
+
+  .sb-ttu {
+    text-transform: uppercase !important;
+  }
+
 }

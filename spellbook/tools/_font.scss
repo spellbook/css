@@ -8,54 +8,70 @@
 //   Family
 // -------------------------------------
 
-.sb-ff-base {
-  font-family: $fontFamily !important;
-}
+@if $tools-font-family {
 
-.sb-ff-heading {
-  font-family: $fontFamily-heading !important;
+  .sb-ff-base {
+    font-family: $fontFamily !important;
+  }
+
+  .sb-ff-heading {
+    font-family: $fontFamily-heading !important;
+  }
+
 }
 
 // -------------------------------------
 //   Size
 // -------------------------------------
 
-.sb-fs-xs {
-  font-size: $fontSize-xs !important;
-}
+@if $tools-font-family {
 
-.sb-fs-s {
-  font-size: $fontSize-s !important;
-}
+  .sb-fs-xs {
+    font-size: $fontSize-xs !important;
+  }
 
-.sb-fs-m {
-  font-size: $fontSize-s !important;
-}
+  .sb-fs-s {
+    font-size: $fontSize-s !important;
+  }
 
-.sb-fs-l {
-  font-size: $fontSize-l !important;
-}
+  .sb-fs-m {
+    font-size: $fontSize-s !important;
+  }
 
-.sb-fs-xl {
-  font-size: $fontSize-xl !important;
+  .sb-fs-l {
+    font-size: $fontSize-l !important;
+  }
+
+  .sb-fs-xl {
+    font-size: $fontSize-xl !important;
+  }
+
 }
 
 // -------------------------------------
 //   Style
 // -------------------------------------
 
-.sb-fsi {
-  font-style: italic !important;
+@if $tools-font-style {
+
+  .sb-fsi {
+    font-style: italic !important;
+  }
+
 }
 
 // -------------------------------------
 //   Weight
 // -------------------------------------
 
-.sb-fw-400 {
-  font-weight: 400 !important;
-}
+@if $tools-font-weight {
 
-.sb-fw-700 {
-  font-weight: 700 !important;
+  .sb-fw-400 {
+    font-weight: 400 !important;
+  }
+
+  .sb-fw-700 {
+    font-weight: 700 !important;
+  }
+
 }

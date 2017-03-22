@@ -8,14 +8,18 @@
 //   Radius
 // -------------------------------------
 
-.sb-bdra-0 {
-  border-radius: 0 !important;
-}
+@if $tools-border-radius {
 
-.sb-bdra-1 {
-  border-radius: $borderRadius !important;
-}
+  .sb-bdra-0 {
+    border-radius: 0 !important;
+  }
 
-.sb-bdra-50p {
-  border-radius: 50% !important;
+  .sb-bdra-1 {
+    border-radius: $borderRadius !important;
+  }
+
+  .sb-bdra-50p {
+    border-radius: 50% !important;
+  }
+
 }
