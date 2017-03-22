@@ -571,6 +571,21 @@ img {
 .sb-mt-4 {
   margin-top: 80px !important; }
 
+.sb-o-1 {
+  opacity: 1 !important; }
+
+.sb-o-075 {
+  opacity: 0.75 !important; }
+
+.sb-o-05 {
+  opacity: 0.5 !important; }
+
+.sb-o-025 {
+  opacity: 0.25 !important; }
+
+.sb-o-0 {
+  opacity: 0 !important; }
+
 .sb-pa-0 {
   padding: 0 !important; }
 
@@ -678,3 +693,9 @@ img {
 
 .sb-ttu {
   text-transform: uppercase !important; }
+
+.sb-vih {
+  visibility: hidden !important; }
+
+.sb-viv {
+  visibility: visible !important; }
