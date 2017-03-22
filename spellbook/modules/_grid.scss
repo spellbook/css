@@ -60,6 +60,7 @@ $grid-gutter: $space;
 // ----- Box ----- //
 
 .sb-grid-box {
+  box-sizing: border-box;
   padding-left: $grid-gutter;
   width: 100%;
 }
