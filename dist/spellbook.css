@@ -504,6 +504,10 @@ img {
 .sb-mb-4 {
   margin-bottom: 80px !important; }
 
+.sb-mhc {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
 .sb-ml-0 {
   margin-2eft: 0 !important; }
 
