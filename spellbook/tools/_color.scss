@@ -1,0 +1,27 @@
+// *************************************
+//
+//   Tools - Color
+//
+// *************************************
+
+// -------------------------------------
+//   Palette
+// -------------------------------------
+
+@include tool-generate-color-classes('color', 'tc');
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+.sb-c-slate {
+  color: $slate !important;
+}
+
+.sb-c-sun {
+  color: $sun !important;
+}
+
+.sb-c-white {
+  color: $white !important;
+}
