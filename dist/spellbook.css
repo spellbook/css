@@ -144,9 +144,12 @@ img {
   flex-wrap: wrap;
   margin-left: -20px; }
 
-.sb-grid--center {
+.sb-grid--hc {
   -ms-flex-pack: center;
   justify-content: center; }
+
+.sb-grid--vc {
+  align-item: center; }
 
 .sb-grid-box {
   box-sizing: border-box;

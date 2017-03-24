@@ -7,7 +7,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .sb-grid
+// .sb-grid[hc|vc]
 //
 //   .sb-grid-box[1of12|...]
 //     / ...
@@ -47,10 +47,16 @@ $grid-gutter: $space;
 //   Modifiers
 // -------------------------------------
 
-// ----- Grid ----- //
+// ----- Horizontally Center ----- //
 
-.sb-grid--center {
+.sb-grid--hc {
   justify-content: center;
+}
+
+// ----- Vertically Center ----- //
+
+.sb-grid--vc {
+  align-item: center;
 }
 
 // -------------------------------------
