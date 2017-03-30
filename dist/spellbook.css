@@ -149,7 +149,8 @@ img {
   justify-content: center; }
 
 .sb-grid--vc {
-  align-item: center; }
+  -ms-flex-align: center;
+  align-items: center; }
 
 .sb-grid-box {
   box-sizing: border-box;
