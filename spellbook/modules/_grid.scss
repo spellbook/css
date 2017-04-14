@@ -47,13 +47,15 @@ $grid-gutter: $space;
 //   Modifiers
 // -------------------------------------
 
-// ----- Horizontally Center ----- //
+// ----- Centering ----- //
+
+// Horizontal
 
 .sb-grid--hc {
   justify-content: center;
 }
 
-// ----- Vertically Center ----- //
+// Vertical
 
 .sb-grid--vc {
   align-items: center;
