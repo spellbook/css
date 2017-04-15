@@ -14,6 +14,14 @@
     text-align: center !important;
   }
 
+  .sb-tal {
+    text-align: left !important;
+  }
+
+  .sb-tar {
+    text-align: right !important;
+  }
+
 }
 
 // -------------------------------------
@@ -24,6 +32,10 @@
 
   .sb-ttu {
     text-transform: uppercase !important;
+  }
+
+  .sb-ttn {
+    text-transform: none !important;
   }
 
 }
