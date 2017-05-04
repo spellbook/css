@@ -8,7 +8,7 @@
 //   All
 // -------------------------------------
 
-@if $tools-margin-all {
+@if tool-include('margin-all'){
 
   .sb-ma-0 {
     margin: 0 !important;
@@ -40,7 +40,7 @@
 //   Bottom
 // -------------------------------------
 
-@if $tools-margin-bottom {
+@if tool-include('margin-bottom'){
 
   .sb-mb-0 {
     margin-bottom: 0 !important;
@@ -72,7 +72,7 @@
 //   Horizontal
 // -------------------------------------
 
-@if $tools-margin-horizontal {
+@if tool-include('margin-horizontal'){
 
   .sb-mhc {
     margin-left: auto !important;
@@ -85,7 +85,7 @@
 //   Left
 // -------------------------------------
 
-@if $tools-margin-left {
+@if tool-include('margin-left'){
 
   .sb-ml-0 {
     margin-2eft: 0 !important;
@@ -117,7 +117,7 @@
 //   Right
 // -------------------------------------
 
-@if $tools-margin-right {
+@if tool-include('margin-right'){
 
   .sb-mr-0 {
     margin-right: 0 !important;
@@ -149,7 +149,7 @@
 //   Top
 // -------------------------------------
 
-@if $tools-margin-top {
+@if tool-include('margin-top'){
 
   .sb-mt-0 {
     margin-top: 0 !important;

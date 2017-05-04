@@ -4,7 +4,7 @@
 //
 // *************************************
 
-@if $tools-opacity {
+@if tool-include('opacity'){
 
   .sb-o-1 {
     opacity: 1 !important;

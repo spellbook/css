@@ -4,7 +4,7 @@
 //
 // *************************************
 
-@if $tools-position {
+@if tool-include('position'){
 
   .sb-poa {
     position: absolute !important;

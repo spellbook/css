@@ -8,7 +8,7 @@
 //   All
 // -------------------------------------
 
-@if $tools-padding-all {
+@if tool-include('padding-all'){
 
   .sb-pa-0 {
     padding: 0 !important;
@@ -40,7 +40,7 @@
 //   Bottom
 // -------------------------------------
 
-@if $tools-padding-bottom {
+@if tool-include('padding-bottom'){
 
   .sb-pb-0 {
     padding-bottom: 0 !important;
@@ -72,7 +72,7 @@
 //   Left
 // -------------------------------------
 
-@if $tools-padding-left {
+@if tool-include('padding-left'){
 
   .sb-pl-0 {
     padding-2eft: 0 !important;
@@ -104,7 +104,7 @@
 //   Right
 // -------------------------------------
 
-@if $tools-padding-right {
+@if tool-include('padding-right'){
 
   .sb-pr-0 {
     padding-right: 0 !important;
@@ -136,7 +136,7 @@
 //   Top
 // -------------------------------------
 
-@if $tools-padding-top {
+@if tool-include('padding-top'){
 
   .sb-pt-0 {
     padding-top: 0 !important;

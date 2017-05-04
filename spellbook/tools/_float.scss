@@ -4,7 +4,7 @@
 //
 // *************************************
 
-@if $tools-float {
+@if tool-include('float'){
 
   .sb-fl {
     float: left !important;

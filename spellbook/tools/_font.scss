@@ -8,7 +8,7 @@
 //   Family
 // -------------------------------------
 
-@if $tools-font-family {
+@if tool-include('font-family'){
 
   .sb-ff-base {
     font-family: $fontFamily !important;
@@ -24,7 +24,7 @@
 //   Size
 // -------------------------------------
 
-@if $tools-font-size {
+@if tool-include('font-size'){
 
   .sb-fs-xs {
     font-size: $fontSize-xs !important;
@@ -52,7 +52,7 @@
 //   Style
 // -------------------------------------
 
-@if $tools-font-style {
+@if tool-include('font-style'){
 
   .sb-fsi {
     font-style: italic !important;
@@ -64,7 +64,7 @@
 //   Weight
 // -------------------------------------
 
-@if $tools-font-weight {
+@if tool-include('font-weight'){
 
   .sb-fw-400 {
     font-weight: 400 !important;

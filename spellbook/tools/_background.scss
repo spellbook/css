@@ -8,7 +8,7 @@
 //   Color
 // -------------------------------------
 
-@if $tools-background-color {
+@if tool-include('background-color') {
 
   @include tool-generate-color-classes('background-color', 'bc');
 

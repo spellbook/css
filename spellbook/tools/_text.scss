@@ -8,7 +8,7 @@
 //   Align
 // -------------------------------------
 
-@if $tools-text-align {
+@if tool-include('text-align'){
 
   .sb-tac {
     text-align: center !important;
@@ -28,7 +28,7 @@
 //   Transform
 // -------------------------------------
 
-@if $tools-text-transform {
+@if tool-include('text-transform'){
 
   .sb-ttu {
     text-transform: uppercase !important;

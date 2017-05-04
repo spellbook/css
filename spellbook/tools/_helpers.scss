@@ -5,10 +5,8 @@
 // *************************************
 
 // -------------------------------------
-//   Color
+//   Tool Generate Color Classes
 // -------------------------------------
-
-// ----- Tool Generate Color Classes ----- //
 // -> Generates color tool classes
 //
 // $proptery - the tool class property
@@ -29,4 +27,19 @@
       }
     }
   }
+}
+
+// -------------------------------------
+//   Tool Include
+// -------------------------------------
+// -> Returns the boolean value of the tool property
+//
+// $proptery - the tool class property
+
+@function tool-include($property) {
+  @if map-get($tools-whitelist, $property) {
+    @return true;
+  }
+
+  @return false;
 }

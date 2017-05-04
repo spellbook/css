@@ -10,7 +10,7 @@
 
 // ----- All ----- //
 
-@if $tools-border-all {
+@if tool-include('border-all'){
 
   .sb-bd {
     border: $border !important;
@@ -20,7 +20,7 @@
 
 // ----- Bottom ----- //
 
-@if $tools-border-bottom {
+@if tool-include('border-bottom'){
 
   .sb-bdb {
     border-bottom: $border !important;
@@ -30,7 +30,7 @@
 
 // ----- Top ----- //
 
-@if $tools-border-top {
+@if tool-include('border-top'){
 
   .sb-bdt {
     border-top: $border !important;
@@ -42,7 +42,7 @@
 //   Radius
 // -------------------------------------
 
-@if $tools-border-radius {
+@if tool-include('border-radius'){
 
   .sb-bdra-0 {
     border-radius: 0 !important;
